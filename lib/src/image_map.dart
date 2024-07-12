@@ -89,8 +89,8 @@ class ImageMapState extends State<ImageMap> {
             child: CircularProgressIndicator(),
           );
         }
-        return GestureDetector(
-          onTapDown: (details) {
+        return MouseRegion(
+          onHover: (details) {
             final b = context.findRenderObject()! as RenderBox;
             final locPos = details.localPosition;
             final widthMul = info.image.width / b.size.width;
