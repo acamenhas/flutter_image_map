@@ -90,6 +90,7 @@ class ImageMapState extends State<ImageMap> {
           );
         }
         return MouseRegion(
+          cursor: SystemMouseCursors.click,
           onHover: (details) {
             final b = context.findRenderObject()! as RenderBox;
             final locPos = details.localPosition;
